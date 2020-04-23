@@ -13,7 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export { plugin as HomePagePlugin } from '@backstage/plugin-home-page';
-export { plugin as WelcomePlugin } from '@backstage/plugin-welcome';
-export { plugin as LighthousePlugin } from '@backstage/plugin-lighthouse';
-export { plugin as TechRadar } from '@backstage/plugin-tech-radar';
+
+import { plugin } from './plugin';
+
+describe('tech-radar', () => {
+  it('should export plugin', () => {
+    expect(plugin).toBeDefined();
+  });
+});
