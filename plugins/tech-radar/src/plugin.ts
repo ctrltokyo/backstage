@@ -15,11 +15,11 @@
  */
 
 import { createPlugin } from '@backstage/core';
-import ExampleComponent from './components/ExampleComponent';
+import ExampleRadar from './example/ExampleRadar';
 
 export const plugin = createPlugin({
   id: 'tech-radar',
   register({ router }) {
-    router.registerRoute('/tech-radar', ExampleComponent);
+    router.registerRoute('/tech-radar', ExampleRadar);
   },
 });
